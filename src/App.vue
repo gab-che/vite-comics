@@ -23,6 +23,7 @@
 <template>
   <TheHeader></TheHeader>
   <MainContent></MainContent>
+  <TheBanner></TheBanner>
 </template>
 
 <style lang="scss">
