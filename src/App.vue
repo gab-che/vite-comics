@@ -22,6 +22,7 @@
 
 <template>
   <TheHeader></TheHeader>
+  <MainContent></MainContent>
 </template>
 
 <style lang="scss">
