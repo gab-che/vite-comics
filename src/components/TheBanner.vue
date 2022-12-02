@@ -31,16 +31,20 @@
 
 <template>
     <section>
-        <div class="container py-4 banner_container">
-            <div class="banner_item d-flex"
-            v-for="item, i in banner_items" :key="i + item.text">
-                <div class="banner_img">
-                    <img :src="`src/assets/img/${item.img}`" alt="{{item.text}}" class="img-fluid">
-                </div>
-                <div class="banner_text">
-                    <span>{{item.text}}</span>
-                </div>
-            </div>
+        <div class="container py-4">
+            <ul class="banner_container list-unstyled">
+                <li class="d-flex"
+                v-for="item, i in banner_items" :key="i + item.text">
+                    <a href="#" class="banner_item d-flex">
+                        <div class="banner_img">
+                            <img :src="`src/assets/img/${item.img}`" alt="{{item.text}}" class="img-fluid">
+                        </div>
+                        <div class="banner_text">
+                            <span>{{item.text}}</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 </template>
@@ -54,13 +58,22 @@
 
     .banner_container{
         @include flex_space_around;
+        margin-bottom: 0;
     }
 
     .banner_item{
         align-items: center;
         gap: 1rem;
+        text-transform: uppercase;
+        font-size: .8rem;
+        color: $accent_color_light; 
         .banner_img{
             width: 30px;
         }
+    }
+
+    a{
+        text-decoration: none;
+        padding: .5rem;
     }
 </style>
