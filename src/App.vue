@@ -24,6 +24,8 @@
   <TheHeader></TheHeader>
   <MainContent></MainContent>
   <TheBanner></TheBanner>
+  <MainFooter></MainFooter>
+  <SecondaryFooter></SecondaryFooter>
 </template>
 
 <style lang="scss">

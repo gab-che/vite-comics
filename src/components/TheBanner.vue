@@ -53,6 +53,7 @@
     @use '../styles/partials/variables' as *;
 
     section{
+        @include z_index_up;
         background-color: $secondary_color;
     }
 

@@ -1,5 +1,6 @@
 $primary_color: #1c1c1c;
 $secondary_color: #0282f9;
+$footer_color: #303030;
 $accent_color_light: #ffffff;
 $accent_color_dark: #787878;
 
@@ -11,4 +12,9 @@ $accent_color_dark: #787878;
 @mixin flex_space_around {
     display: flex;
     justify-content: space-around;
+}
+
+@mixin z_index_up {
+    position: relative;
+    z-index: 1;
 }
