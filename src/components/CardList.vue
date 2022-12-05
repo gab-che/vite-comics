@@ -19,7 +19,7 @@
     <div class="row">
         <div class="col-2" v-for="card in cards">
             <div class="card card_product">
-                <img :src="card.thumb" class="card-img-top" alt="...">
+                <img :src="card.thumb" class="card-img-top" :alt="card.series">
                 <div class="card-body">
                     <h6 class="card-title">{{card.series}}</h6>
                 </div>

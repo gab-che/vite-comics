@@ -93,8 +93,8 @@
             <img src="../assets/img/jumbotron.jpg" alt="" class="img-fluid">
         </div>
         <div class="section_cards">
-            <div class="container py-4">
-                <h2>Current Series</h2>
+            <div class="container">
+                <h3>Current Series</h3>
                 <CardList :cards="cardsArray"></CardList>
             </div>
         </div>
@@ -112,5 +112,17 @@
     .section_cards{
         background-color: $primary_color;
         color: $accent_color_light;
+        position: relative;
+        padding: 3rem 0;
+
+        h3{
+            background-color: $secondary_color;
+            display: inline-block;
+            padding: 1rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            position: absolute;
+            top: -30px;
+        }
     }
 </style>
