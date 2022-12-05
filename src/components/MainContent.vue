@@ -89,17 +89,27 @@
 
 <template>
     <main>
-        <div class="container py-4">
-            <p>Insert content</p>
+        <div class="section_jumbo">
+            <img src="../assets/img/jumbotron.jpg" alt="" class="img-fluid">
         </div>
-        <CardList :cards="cardsArray"></CardList>
+        <div class="section_cards">
+            <div class="container py-4">
+                <h2>Current Series</h2>
+                <CardList :cards="cardsArray"></CardList>
+            </div>
+        </div>
     </main>
 </template>
 
 <style scoped lang="scss">
     @use '../styles/partials/variables' as *;
 
-    main{
+    .section_jumbo{
+        max-height: 300px;
+        overflow: hidden;
+    }
+
+    .section_cards{
         background-color: $primary_color;
         color: $accent_color_light;
     }
